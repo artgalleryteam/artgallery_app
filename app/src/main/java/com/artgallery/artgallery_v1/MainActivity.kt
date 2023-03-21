@@ -1,6 +1,8 @@
 package com.artgallery.artgallery_v1
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -25,5 +27,10 @@ private lateinit var binding: ActivityMainBinding
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         navView.setupWithNavController(navController)
+    }
+
+    fun sign_in_intent(view: View){
+        val sign_in_intention = Intent(this, SignInActivity::class.java)
+        startActivity(sign_in_intention)
     }
 }

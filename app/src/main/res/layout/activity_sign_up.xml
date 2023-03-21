@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait">
+
+    <ImageButton
+        android:id="@+id/sign_up_back"
+        android:onClick="sign_in_intent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:contentDescription="sign_up_back"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/button_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/literata_semibold"
+        android:text="Регистрация"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="579dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_text">
+
+        <EditText
+            android:id="@+id/sign_up_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_edittext"
+            android:ems="15"
+            android:fontFamily="@font/literata"
+            android:hint="Имя"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/puddle"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/sign_up_view1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/sign_up_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_edittext"
+            android:ems="15"
+            android:fontFamily="@font/literata"
+            android:hint="Фамилия"
+            android:inputType="textUri"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/puddle"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/sign_up_view2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_edittext"
+            android:ems="15"
+            android:fontFamily="@font/literata"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/puddle"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/sign_up_view3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/sign_up_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_edittext"
+            android:ems="15"
+            android:fontFamily="@font/literata"
+            android:hint="Телефон"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/puddle"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/sign_up_view4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_edittext"
+            android:ems="10"
+            android:fontFamily="@font/literata"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/puddle"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/sign_up_view5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/sign_up_rep_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_edittext"
+            android:ems="10"
+            android:fontFamily="@font/literata"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/puddle"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/sign_up_view6"
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+            <ImageButton
+                android:id="@+id/sign_up_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:contentDescription="sign_up_button"
+                android:src="@drawable/sign_up_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/sign_up_view"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sign_up_have_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/literata"
+                android:paddingStart="63dp"
+                android:text="Уже есть аккаунт?"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sign_up_sign_in"
+                android:layout_width="wrap_content"
+                android:onClick="sign_in_intent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/literata_bold"
+                android:text="Войти"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

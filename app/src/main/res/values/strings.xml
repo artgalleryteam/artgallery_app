@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ARtGallery</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_catalogue">Каталог</string>
+    <string name="title_profile">Профиль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Preview   -->
+    <string name="preview_appname">ARt\nGallery</string>
+    <string name="preview_button">Вперед к прекрасному</string>
+
+
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

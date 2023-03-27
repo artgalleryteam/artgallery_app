@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="puddle">#6F7E91</color>
+    <color name="tr_puddle">#A36F7E91</color>
     <color name="ground">#A4907F</color>
     <color name="peach">#E09B74</color>
     <color name="orange">#FDA148</color>

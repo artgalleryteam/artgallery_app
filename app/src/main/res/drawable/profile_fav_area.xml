@@ -2,12 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape>
-            <solid android:color="@color/white_rabbit"/>
-            <corners
-                android:topLeftRadius="20dp"
-                android:topRightRadius="20dp"
-
-                />
+            <solid android:color="@color/puddle"/>
+            <corners android:radius="10.0dip" />
             <size android:height="150dp"
                 android:width="150dp"/>
         </shape>

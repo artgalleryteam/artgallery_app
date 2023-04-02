@@ -80,7 +80,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/picture_info_shape_AR"
                 android:orientation="horizontal">
@@ -103,6 +103,29 @@
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="match_parent"
+                    android:layout_height="107dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/profile_bottom_area"
+                    android:backgroundTint="@color/peach" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_area_info"
+                    android:text="TextView" />
             </LinearLayout>
 
 

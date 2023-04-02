@@ -6,10 +6,26 @@
     <string name="title_catalogue">Каталог</string>
     <string name="title_profile">Профиль</string>
     <!-- TODO: Remove or change this placeholder text -->
+
+    <!--  Buttons  -->
+    <string name="bt_back">Назад</string>
+
+
     <!-- Preview   -->
     <string name="preview_appname">ARt\nGallery</string>
     <string name="preview_button">Вперед к прекрасному</string>
 
+    <!--    Sign in-->
+    <string name="sign_in">Вход</string>
+    <string name="sign_in_action">Войти</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="no_account">Ещё нет аккаунта?</string>
+
+    <!--  Sign up  -->
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_up_action">Зарегистрироваться</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

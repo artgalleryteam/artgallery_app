@@ -1,4 +1,4 @@
-7<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -15,15 +15,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/picture_info_circle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/arrow_back" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/bt_back" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -32,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:fontFamily="@font/literata_semibold"
-        android:text="Вход"
+        android:text="@string/sign_in"
         android:textSize="56sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,14 +66,15 @@
             android:background="@drawable/sign_in_edittext"
             android:ems="15"
             android:fontFamily="@font/literata"
-            android:hint="Почта"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:paddingStart="20dp"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
             android:textColorHint="@color/puddle"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:autofillHints="true" />
 
         <View
             android:id="@+id/view"
@@ -76,7 +88,7 @@
             android:background="@drawable/sign_in_edittext"
             android:ems="10"
             android:fontFamily="@font/literata"
-            android:hint="Пароль"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:paddingStart="20dp"
@@ -102,7 +114,7 @@
                 android:background="@drawable/sign_in_button"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:text="Войти"
+                android:text="@string/sign_in_action"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:cornerRadius="20dp"
@@ -122,7 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/literata_bold"
-            android:text="Забыли пароль?"
+            android:text="@string/forgot_password"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -137,7 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/literata"
-            android:text="Если ещё нет аккаунта."
+            android:text="@string/no_account"
             android:textAlignment="center"
             android:textSize="18sp" />
 
@@ -148,7 +160,7 @@
             android:fontFamily="@font/literata_bold"
             android:minHeight="48dp"
             android:onClick="sign_up_intent"
-            android:text="Зарегистрироваться"
+            android:text="@string/sign_up_action"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold"

@@ -5,4 +5,14 @@
     <item name="edit_profile_photo" type="id" />
     <item name="edit_profile_photo_edit" type="id" />
     <item name="edit_exit" type="id" />
+    <item name="edit_edittext_name" type="id" />
+    <item name="edit_edittext_surname" type="id" />
+    <item name="view7" type="id" />
+    <item name="edit_edittext_bd" type="id" />
+    <item name="view8" type="id" />
+    <item name="edit_edittext_phone" type="id" />
+    <item name="view9" type="id" />
+    <item name="edit_edittext_email" type="id" />
+    <item name="view10" type="id" />
+    <item name="edit_button_change_pass" type="id" />
 </resources>

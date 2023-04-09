@@ -88,9 +88,9 @@
 
             <ImageView
                 android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit_change_date"
+                android:layout_width="79dp"
+                android:layout_height="92dp"
+                android:src="@drawable/exit"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

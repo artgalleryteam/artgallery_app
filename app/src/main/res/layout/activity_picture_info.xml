@@ -102,7 +102,7 @@
                     android:layout_gravity="center|left"
                     android:layout_weight="1"
                     android:fontFamily="@font/literata_semibold"
-                    android:text="AR - просмотр"
+                    android:text="@string/ar"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp" />
 

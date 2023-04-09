@@ -60,7 +60,7 @@
                         android:textColor="@color/puddle"
                         android:textSize="26sp"
                         android:fontFamily="@font/literata_bold"
-                        android:text="Войти" />
+                        android:text="@string/sign_in_action" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -108,7 +108,7 @@
                 android:background="@drawable/profile_fav_area"
                 android:fontFamily="@font/literata_semibold"
                 android:gravity="center"
-                android:text="Избранное"
+                android:text="@string/favorites"
                 android:textColor="#FFFFFF"
                 android:textSize="26sp" />
 
@@ -174,7 +174,7 @@
                     android:background="@drawable/profile_top_info_area"
                     android:fontFamily="@font/literata_semibold"
                     android:gravity="center"
-                    android:text="Корзина"
+                    android:text="@string/basket"
                     android:textSize="26sp"
                     android:textColor="@color/puddle" />
 
@@ -186,7 +186,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/profile_top_info_area"
                     android:fontFamily="@font/literata_semibold"
-                    android:text="Покупки"
+                    android:text="@string/shop"
                     android:gravity="center"
                     android:textSize="26sp"
                     android:textColor="@color/puddle" />
@@ -202,7 +202,7 @@
                 android:orientation="horizontal"
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp"
-                android:text="Настройки"
+                android:text="@string/settings"
                 android:background="@drawable/profile_top_info_area"
                 android:fontFamily="@font/literata_semibold"
                 android:gravity="center"
@@ -224,7 +224,7 @@
                 android:fontFamily="@font/literata_semibold"
                 android:textColor="@color/puddle"
                 android:gravity="center"
-                android:text="ARtGallery, 2023. Все права защищены\nartgallerysmr@yandex.ru" />
+                android:text="@string/privileges" />
 
 
         </LinearLayout>

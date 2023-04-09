@@ -5,6 +5,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_catalogue">Каталог</string>
     <string name="title_profile">Профиль</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in_action">Войти</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <!--  Buttons  -->
@@ -17,15 +19,41 @@
 
     <!--    Sign in-->
     <string name="sign_in">Вход</string>
-    <string name="sign_in_action">Войти</string>
     <string name="email">Почта</string>
-    <string name="password">Пароль</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="no_account">Ещё нет аккаунта?</string>
 
     <!--  Sign up  -->
     <string name="sign_up">Регистрация</string>
     <string name="sign_up_action">Зарегистрироваться</string>
+    <string name="name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="email_sign_up">Почта</string>
+    <string name="phone">Телефон</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="be_account">Уже есть аккаунт?</string>
+
+    <!--  Catalogue  -->
+    <string name="catalogue">Каталог</string>
+    <string name="search">Поиск</string>
+
+    <!--  Home  -->
+    <string name="for_you">Подборка для вас</string>
+
+    <!--  Profile  -->
+    <string name="favorites">Избранное</string>
+    <string name="basket">Корзина</string>
+    <string name="shop">Покупки</string>
+    <string name="settings">Настройки</string>
+    <string name="privileges">ARtGallery, 2023. Все права защищены\nartgallerysmr@yandex.ru</string>
+
+    <!--  Picture info  -->
+    <string name="ar">AR - просмотр</string>
+
+
+
+
+
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -60,7 +60,9 @@
                         android:textColor="@color/puddle"
                         android:textSize="26sp"
                         android:fontFamily="@font/literata_bold"
-                        android:text="@string/sign_in_action" />
+                        android:text="@string/sign_in_action"
+                        android:onClick="sign_in_intent"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -75,7 +77,8 @@
                         android:layout_width="80dp"
                         android:layout_height="60dp"
                         android:background="@drawable/profile_top_info_area"
-                        android:layout_marginBottom="20dp">
+                        android:layout_marginBottom="20dp"
+                        >
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 

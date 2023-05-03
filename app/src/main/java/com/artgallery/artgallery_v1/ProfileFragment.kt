@@ -1,5 +1,6 @@
 package com.artgallery.artgallery_v1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -38,6 +39,11 @@ class ProfileFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
+    fun sign_in_intent(inflater: LayoutInflater, container: ViewGroup?,
+                       savedInstanceState: Bundle?): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.activity_sign_in, container, false)
+    }
 
 
     companion object {

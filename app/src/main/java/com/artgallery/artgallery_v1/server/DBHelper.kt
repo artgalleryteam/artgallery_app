@@ -1,9 +1,8 @@
 package com.artgallery.artgallery_v1.server
 
 import java.sql.DriverManager
-import java.sql.PreparedStatement
 
-interface Connection {
+class DBHelper {
     fun init() {
         val driver = "com.mysql.jdbc.Driver"
         val url = "jdbc:mysql://31.31.202.250:3306/artgallery"

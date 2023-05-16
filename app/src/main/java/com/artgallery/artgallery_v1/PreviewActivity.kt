@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.artgallery.artgallery_v1.server.DBHelper
 
 class PreviewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +14,5 @@ class PreviewActivity : AppCompatActivity() {
     fun main_intent(view: View){
         val main_intention = Intent(this, MainActivity::class.java)
         startActivity(main_intention)
-        val databaseHelper = DBHelper()
-        databaseHelper.init()
     }
 }

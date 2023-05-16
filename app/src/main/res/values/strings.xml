@@ -32,6 +32,9 @@
     <string name="phone">Телефон</string>
     <string name="repeat_password">Повторите пароль</string>
     <string name="be_account">Уже есть аккаунт?</string>
+    <string name="sign_up_error">Ошибка регистрации. Перепроверьте данные.</string>
+    <string name="sign_up_ver">На Вашу посту отправлено письмо с подтверждением регистрации</string>
+    <string name="sign_up_ver_error">Не удалось отправить письмо с подтверждением регистрации</string>
 
     <!--  Catalogue  -->
     <string name="catalogue">Каталог</string>

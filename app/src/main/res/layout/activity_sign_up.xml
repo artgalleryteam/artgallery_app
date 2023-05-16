@@ -31,7 +31,7 @@
         android:id="@+id/sign_up_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="105dp"
         android:fontFamily="@font/literata_semibold"
         android:text="@string/sign_up"
         android:textSize="45sp"
@@ -42,54 +42,13 @@
 
     <LinearLayout
         android:layout_width="320dp"
-        android:layout_height="579dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_text">
-
-        <EditText
-            android:id="@+id/sign_up_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sign_in_edittext"
-            android:ems="15"
-            android:fontFamily="@font/literata"
-            android:hint="@string/name"
-            android:inputType="textUri"
-            android:minHeight="48dp"
-            android:paddingStart="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:textColorHint="@color/puddle"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/sign_up_view1"
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <EditText
-            android:id="@+id/sign_up_surname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sign_in_edittext"
-            android:ems="15"
-            android:fontFamily="@font/literata"
-            android:hint="@string/last_name"
-            android:inputType="textUri"
-            android:minHeight="48dp"
-            android:paddingStart="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:textColorHint="@color/puddle"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/sign_up_view2"
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
 
         <EditText
             android:id="@+id/sign_up_email"
@@ -110,28 +69,7 @@
         <View
             android:id="@+id/sign_up_view3"
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <EditText
-            android:id="@+id/sign_up_phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sign_in_edittext"
-            android:ems="15"
-            android:fontFamily="@font/literata"
-            android:hint="@string/phone"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:paddingStart="20dp"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:textColorHint="@color/puddle"
-            android:textSize="20sp" />
-
-        <View
-            android:id="@+id/sign_up_view4"
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="40dp" />
 
         <EditText
             android:id="@+id/sign_up_password"
@@ -173,13 +111,14 @@
         <View
             android:id="@+id/sign_up_view6"
             android:layout_width="match_parent"
-            android:layout_height="18dp" />
+            android:layout_height="30dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="49dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sign_up_send_bttn"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:background="@drawable/sign_in_button"
@@ -229,9 +168,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/literata_bold"
+                android:paddingStart="10dp"
                 android:text="@string/sign_in_action"
                 android:textSize="15sp"
-                android:paddingStart="10dp"
                 tools:ignore="RtlSymmetry" />
         </LinearLayout>
 

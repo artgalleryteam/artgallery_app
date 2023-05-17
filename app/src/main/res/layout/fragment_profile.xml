@@ -52,17 +52,15 @@
                         app:srcCompat="@drawable/profile_anon_pic" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/profile_name"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:textColor="@color/puddle"
-                        android:textSize="26sp"
                         android:fontFamily="@font/literata_bold"
-                        android:text="@string/sign_in_action"
+                        android:gravity="center"
                         android:onClick="sign_in_intent"
-                        />
+                        android:textColor="@color/puddle"
+                        android:textSize="26sp" />
                 </LinearLayout>
 
                 <LinearLayout

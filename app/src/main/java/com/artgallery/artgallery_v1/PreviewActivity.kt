@@ -14,5 +14,6 @@ class PreviewActivity : AppCompatActivity() {
     fun main_intent(view: View){
         val main_intention = Intent(this, MainActivity::class.java)
         startActivity(main_intention)
+        finish()
     }
 }

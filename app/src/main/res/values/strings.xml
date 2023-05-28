@@ -17,13 +17,16 @@
 
     <!-- Preview   -->
     <string name="preview_appname">ARt\nGallery</string>
-    <string name="preview_button">Вперед к прекрасному</string>
+    <string name="preview_button">Вперед\nк прекрасному</string>
 
     <!--    Sign in-->
     <string name="sign_in">Вход</string>
     <string name="email">Почта</string>
     <string name="forgot_password">Забыли пароль?</string>
     <string name="no_account">Ещё нет аккаунта?</string>
+    <string name="sign_in_success">Вход совершен</string>
+    <string name="sign_in_error">Ошибка регистрации. Перепроверьте данные.</string>
+
 
     <!--  Sign up  -->
     <string name="sign_up">Регистрация</string>

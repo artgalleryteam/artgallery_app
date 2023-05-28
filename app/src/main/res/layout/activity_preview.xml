@@ -57,36 +57,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/preview_blue_frame2" />
 
-    <Button
-        android:id="@+id/preview_button_enter"
-        android:layout_width="258dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="204dp"
-        android:backgroundTint="@color/orange"
-        android:fontFamily="@font/literata_semibold"
-        android:onClick="main_intent"
-        android:text="@string/preview_button"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/preview_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="110dp"
         android:fontFamily="@font/literata_bold"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/preview_appname"
         android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/preview_central_frame"
+        app:layout_constraintEnd_toEndOf="@+id/preview_central_frame"
+        app:layout_constraintStart_toStartOf="@+id/preview_central_frame"
+        app:layout_constraintTop_toTopOf="@+id/preview_central_frame" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/preview_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/sign_in_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486" />
+        app:layout_constraintTop_toBottomOf="@+id/preview_central_frame">
+
+        <TextView
+            android:id="@+id/preview_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/literata_semibold"
+            android:text="@string/preview_button"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

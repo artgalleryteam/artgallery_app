@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -41,8 +42,19 @@ private lateinit var tvAccount: TextView
         startActivity(sign_in_intention)
     }
 
-    fun uiUpdate(user: FirebaseUser?){
-        tvAccount= findViewById<View>(R.id.profile_name) as TextView
-        tvAccount.text = if(user==null){resources.getString(R.string.non_auth)}else{user.email}
+
+//    fun uiUpdate(user: FirebaseUser?){
+//        tvAccount= findViewById<View>(R.id.profile_name) as TextView
+//        tvAccount.text = if(user==null){resources.getString(R.string.non_auth)}else{user.email}
+//    }
+
+    fun profileReload(){
+        val fragment = supportFragmentManager.findFragmentByTag("profile")
+        if (fragment != null) {
+            supportFragmentManager.beginTransaction()
+                .remove(fragment)
+                .add(R.id.activity_main, ProfileFragment(), "profile")
+                .commit()
+        }
     }
 }

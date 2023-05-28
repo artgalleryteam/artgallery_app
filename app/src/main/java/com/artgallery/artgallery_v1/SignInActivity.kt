@@ -8,10 +8,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.artgallery.artgallery_v1.accountHelper.accountHelper
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.coroutines.Dispatchers.Main
 
 class SignInActivity : AppCompatActivity() {
+
+    private  val accHelper = accountHelper(MainActivity())
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +34,14 @@ class SignInActivity : AppCompatActivity() {
         val back = findViewById<View>(R.id.sign_in_back) as ConstraintLayout
         back.setOnClickListener{
             this.startActivity(Intent(this@SignInActivity, ProfileFragment::class.java))
+            finish()
+        }
+
+        val sign_in_send_button = findViewById<View>(R.id.sign_in_button) as Button
+        sign_in_send_button.setOnClickListener{
+            val email_editText = findViewById<View>(R.id.sign_in_email) as EditText
+            val password_editText = findViewById<View>(R.id.sign_in_password) as EditText
+            accHelper.signIn(email_editText.text.toString(),password_editText.text.toString())
             finish()
         }
     }

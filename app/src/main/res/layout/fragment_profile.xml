@@ -58,7 +58,19 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/literata_bold"
                         android:gravity="center"
+                        android:maxWidth="75dp"
+                        android:text="Имя"
+                        android:textColor="@color/puddle"
+                        app:autoSizeMaxTextSize="26sp" />
+                    <TextView
+                        android:id="@+id/profile_sign_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/literata_bold"
+                        android:gravity="center"
                         android:onClick="sign_in_intent"
+                        android:text="Войти"
                         android:textColor="@color/puddle"
                         android:textSize="26sp" />
                 </LinearLayout>

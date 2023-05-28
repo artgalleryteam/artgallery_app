@@ -14,10 +14,9 @@ import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.artgallery.artgallery_v1.accountHelper.accountHelper
 
-class SignUpActivity : AppCompatActivity() {
+class SignUpActivity() : AppCompatActivity() {
 
     private  val accHelper = accountHelper(MainActivity())
-
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,8 +40,9 @@ class SignUpActivity : AppCompatActivity() {
             val email_editText = findViewById<View>(R.id.sign_up_email) as EditText
             val password_editText = findViewById<View>(R.id.sign_up_password) as EditText
             val confirm_password_editText = findViewById<View>(R.id.sign_up_rep_password) as EditText
-            if(password_editText.text.toString()==confirm_password_editText.text.toString()){
+            if(password_editText.text.toString()==confirm_password_editText.text.toString() && password_editText.text.toString().length>=6){
                 accHelper.signUpWithEmail(email_editText.text.toString(),password_editText.text.toString())
+                finish()
             }
         }
     }

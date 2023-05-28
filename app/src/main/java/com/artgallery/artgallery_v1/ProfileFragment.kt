@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.artgallery.artgallery_v1.databinding.FragmentProfileBinding
+import com.google.firebase.auth.FirebaseAuth
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,13 +40,32 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_profile, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val user = FirebaseAuth.getInstance().currentUser
+        val profile_name: TextView = view.findViewById(R.id.profile_name)
+        val profile_sign_in: TextView = view.findViewById(R.id.profile_sign_in)
+        if (user != null){
+            profile_name.visibility=View.VISIBLE
+            profile_name.text=user.email
+            profile_sign_in.visibility=View.GONE
+        }
+        else{
+            profile_name.visibility=View.GONE
+            profile_sign_in.visibility=View.VISIBLE
+        }
     }
 
     fun sign_in_intent(inflater: LayoutInflater, container: ViewGroup?,
                        savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.activity_sign_in, container, false)
+
     }
 
 

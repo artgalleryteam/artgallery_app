@@ -11,26 +11,31 @@ class accountHelper(act:MainActivity) {
         if (email.isNotEmpty() && password.isNotEmpty()){
             act.myAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{task->
                 if(task.isSuccessful){
-                    sendEmailVerification(task.result?.user!!)
-                    act.uiUpdate(task.result?.user)
+                    act.profileReload()
+                    act.myAuth.signOut()
                 }
                 else{
                     Toast.makeText(act,act.resources.getString(R.string.sign_up_error),Toast.LENGTH_SHORT).show()
                 }
             }
         }
+        act.profileReload()
     }
 
-    private fun sendEmailVerification(user:FirebaseUser){
-        user.sendEmailVerification().addOnCompleteListener{task ->
-            if (task.isSuccessful){
-                Toast.makeText(act,act.resources.getString(R.string.sign_up_ver),Toast.LENGTH_SHORT).show()
-            }
-            else{
-                Toast.makeText(act,act.resources.getString(R.string.sign_up_ver_error),Toast.LENGTH_SHORT).show()
-
+    fun signIn(email: String,password: String){
+        if (email.isNotEmpty() && password.isNotEmpty()){
+            act.myAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener{task->
+                if(task.isSuccessful){
+//                    Toast.makeText(act,act.resources.getString(R.string.sign_in_success),Toast.LENGTH_SHORT).show()
+                    act.profileReload()
+                }
+                else{
+                    Toast.makeText(act,act.resources.getString(R.string.sign_in_success),Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
+
+
 
 }

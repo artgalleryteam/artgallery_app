@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment" >
+    android:background="@drawable/fragment_picture_info_shape1"
+    tools:context=".ui.home.HomeFragment">
 
     <View
         android:id="@+id/view5"
@@ -41,73 +42,29 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/app_name"
+        android:layout_height="0dp"
+        android:contentDescription="@string/email"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/home_pic_space"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                app:columnCount="2">
 
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="190dp"
-                    android:layout_height="187dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="30dp"
-                    app:srcCompat="@drawable/main_pic1" />
-
-                <ImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="120dp"
-                    android:layout_height="177dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/main_pic3_" />
-
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="385dp"
-                android:layout_height="204dp"
-                android:layout_marginLeft="23dp"
-                android:layout_marginTop="-15dp"
-                app:srcCompat="@drawable/main_pic6" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="394dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView14"
-                    android:layout_width="224dp"
-                    android:layout_height="268dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="-30dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/main_pic5" />
-
-                <ImageView
-                    android:id="@+id/imageView17"
-                    android:layout_width="190dp"
-                    android:layout_height="391dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/main_pic2" />
-
-            </LinearLayout>
-
+            </androidx.gridlayout.widget.GridLayout>
         </LinearLayout>
     </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

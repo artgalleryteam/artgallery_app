@@ -90,12 +90,32 @@
                         android:layout_marginBottom="20dp"
                         >
 
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/profile_edit_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="80dp"
                         android:layout_height="60dp"
-                        android:background="@drawable/profile_top_info_area"/>
+                        android:background="@drawable/profile_top_info_area">
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="54dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/profile_chat_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

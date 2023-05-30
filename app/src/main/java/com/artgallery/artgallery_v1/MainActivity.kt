@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -56,5 +57,10 @@ private lateinit var tvAccount: TextView
                 .add(R.id.activity_main, ProfileFragment(), "profile")
                 .commit()
         }
+    }
+
+    fun toastMessage(string: String){
+//        val toast=Toast.makeText(this,string,Toast.LENGTH_SHORT)
+//        toast.show()
     }
 }

@@ -12,10 +12,11 @@ class accountHelper(act:MainActivity) {
             act.myAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{task->
                 if(task.isSuccessful){
                     act.profileReload()
-                    act.myAuth.signOut()
+//                    act.myAuth.signOut()
                 }
                 else{
-                    Toast.makeText(act,act.resources.getString(R.string.sign_up_error),Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(act,act.resources.getString(R.string.sign_up_error),Toast.LENGTH_SHORT).show()
+                    act.toastMessage(R.string.sign_up_error.toString())
                 }
             }
         }
@@ -27,10 +28,12 @@ class accountHelper(act:MainActivity) {
             act.myAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener{task->
                 if(task.isSuccessful){
 //                    Toast.makeText(act,act.resources.getString(R.string.sign_in_success),Toast.LENGTH_SHORT).show()
+                    act.toastMessage(R.string.sign_in_success.toString())
                     act.profileReload()
                 }
                 else{
-                    Toast.makeText(act,act.resources.getString(R.string.sign_in_success),Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(act,act.resources.getString(R.string.sign_in_success),Toast.LENGTH_SHORT).show()
+                    act.toastMessage(R.string.sign_in_error.toString())
                 }
             }
         }

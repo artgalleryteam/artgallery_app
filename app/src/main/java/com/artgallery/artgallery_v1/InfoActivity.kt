@@ -36,7 +36,8 @@ class InfoActivity : AppCompatActivity() {
             val intent = Intent(this, ARActivity::class.java)
             val imageUri1 = Uri.parse(imageUri)
             val fileNameWithExtension = imageUri1.getLastPathSegment()
-            val fileNameWithoutExtension = fileNameWithExtension?.substringBeforeLast(".")
+            var fileNameWithoutExtension = fileNameWithExtension?.substringAfterLast("/")
+            fileNameWithoutExtension = fileNameWithoutExtension?.substringBeforeLast(".")
             intent.putExtra("imageUri", fileNameWithoutExtension)
             startActivity(intent)
         }

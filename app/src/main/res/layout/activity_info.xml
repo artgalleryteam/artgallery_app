@@ -11,26 +11,7 @@
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/picture_info_circle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
-
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/picture_info_like_clear"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/info_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -50,17 +31,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <View
-            android:id="@+id/view6"
-            android:layout_width="200dp"
-            android:layout_height="250dp"
+        <ImageView
+            android:id="@+id/info_pic"
+            android:layout_width="230dp"
+            android:layout_height="280dp"
             android:layout_marginStart="106dp"
             android:layout_marginEnd="106dp"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/fragment_picture_info_shape1"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
         <LinearLayout
@@ -96,23 +78,26 @@
                     android:src="@drawable/picture_info_camera" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/info_name"
                     android:layout_width="210dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|left"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="@font/literata_semibold"
+                    android:gravity="center"
+
                     android:paddingStart="20dp"
-                    android:text="@string/ar"
+                    android:text="Название"
                     android:textColor="#FFFFFF"
-                    android:textSize="30sp" />
+                    app:autoSizeMaxTextSize="30sp"
+                    app:autoSizeMinTextSize="20sp"
+                    app:autoSizeTextType="uniform" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="76dp"
-                android:layout_marginTop="50dp"
+                android:layout_height="106dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -123,18 +108,35 @@
                     android:layout_marginLeft="180dp"
                     android:background="@drawable/profile_bottom_area"
                     android:backgroundTint="@color/peach"
-                    android:text="Картина"
-                    android:gravity="center"
                     android:fontFamily="@font/literata_semibold"
+                    android:gravity="center"
+                    android:text="Картина"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView11"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    android:background="@drawable/profile_area_info_fav"
-                    android:text="TextView" />
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/info_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/profile_area_info_fav"
+                            android:fontFamily="@font/literata"
+                            android:padding="5dp"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp"
+                            android:text="TextView"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </ScrollView>
 
             </LinearLayout>
 
@@ -160,12 +162,16 @@
                     />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/info_author"
                     android:layout_width="match_parent"
-                    android:layout_height="65dp"
+                    android:layout_height="match_parent"
                     android:background="@drawable/profile_area_info_fav"
+                    android:fontFamily="@font/literata_bold"
+                    android:gravity="center_vertical"
                     android:text="TextView"
-                    />
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    tools:ignore="RtlCompat" />
             </LinearLayout>
 
 

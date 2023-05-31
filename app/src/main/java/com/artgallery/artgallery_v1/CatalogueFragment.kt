@@ -1,5 +1,6 @@
 package com.artgallery.artgallery_v1
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -65,6 +66,13 @@ class CatalogueFragment : Fragment() {
                     item.downloadUrl.addOnSuccessListener { uri ->
                         val imageView = ImageView(context)
                         imageView.id = View.generateViewId()
+
+                        // Add OnClickListener here
+                        imageView.setOnClickListener {
+                            val intent = Intent(activity, InfoActivity::class.java)
+                            intent.putExtra("imageUri", uri.toString())
+                            startActivity(intent)
+                        }
 
                         val layoutParams = GridLayout.LayoutParams()
                         layoutParams.width = imageSize

@@ -5,7 +5,6 @@
     android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fragment_picture_info_shape1"
     tools:context=".ui.home.HomeFragment">
 
     <View
@@ -52,6 +51,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/fragment_picture_info_shape1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,33 +62,33 @@
 
         <TextView
             android:id="@+id/name_text_view"
-            android:fontFamily="@font/literata_bold"
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="26sp"
-            android:text="Автор" />
+            android:layout_gravity="center"
+            android:fontFamily="@font/literata_bold"
+            android:gravity="center"
+            android:text="Автор"
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/author_text_view"
-            android:fontFamily="@font/literata"
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Название" />
+            android:layout_gravity="center"
+            android:fontFamily="@font/literata"
+            android:gravity="center"
+            android:text="Название"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/year_text_view"
-            android:fontFamily="@font/literata"
-            android:gravity="center"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Год" />
+            android:layout_gravity="center"
+            android:fontFamily="@font/literata"
+            android:gravity="center"
+            android:text="Год"
+            android:textSize="20sp" />
     </LinearLayout>
 
 

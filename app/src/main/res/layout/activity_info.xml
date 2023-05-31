@@ -92,14 +92,14 @@
                     android:text="Название"
                     android:textColor="#FFFFFF"
                     app:autoSizeMaxTextSize="30sp"
-                    app:autoSizeMinTextSize="20sp"
+                    app:autoSizeMinTextSize="18sp"
                     app:autoSizeTextType="uniform" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="106dp"
+                android:layout_height="126dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -130,12 +130,13 @@
                             android:id="@+id/info_description"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_marginBottom="14dp"
                             android:background="@drawable/profile_area_info_fav"
                             android:fontFamily="@font/literata"
                             android:padding="5dp"
                             android:paddingStart="10dp"
                             android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
+                            android:paddingTop="15dp"
                             android:text="TextView"
                             android:textSize="15sp" />
                     </LinearLayout>
@@ -146,7 +147,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="73dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -157,12 +158,11 @@
                     android:layout_marginLeft="180dp"
                     android:background="@drawable/profile_bottom_area"
                     android:backgroundTint="@color/peach"
-                    android:text="Автор"
-                    android:gravity="center"
                     android:fontFamily="@font/literata_semibold"
+                    android:gravity="center"
+                    android:text="Автор"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    />
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/info_author"

@@ -44,11 +44,6 @@ private lateinit var tvAccount: TextView
     }
 
 
-//    fun uiUpdate(user: FirebaseUser?){
-//        tvAccount= findViewById<View>(R.id.profile_name) as TextView
-//        tvAccount.text = if(user==null){resources.getString(R.string.non_auth)}else{user.email}
-//    }
-
     fun profileReload(){
         val fragment = supportFragmentManager.findFragmentByTag("profile")
         if (fragment != null) {
@@ -59,8 +54,4 @@ private lateinit var tvAccount: TextView
         }
     }
 
-    fun toastMessage(string: String){
-//        val toast=Toast.makeText(this,string,Toast.LENGTH_SHORT)
-//        toast.show()
-    }
 }

@@ -39,6 +39,12 @@ class accountHelper(act:MainActivity) {
         }
     }
 
+    fun logout(){
+        act.myAuth.signOut()
+    }
+
+
+
 
 
 }

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.artgallery.artgallery_v1.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -41,6 +42,7 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
+
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
@@ -59,7 +61,27 @@ class ProfileFragment : Fragment() {
             profile_name.visibility=View.GONE
             profile_sign_in.visibility=View.VISIBLE
         }
+
+        val button = view.findViewById<View>(R.id.profile_cart)
+        button.setOnClickListener {
+            val intent = Intent(activity, CartActivity::class.java)
+            startActivity(intent)
+        }
+
+        val button1 = view.findViewById<View>(R.id.profile_purch)
+        button1.setOnClickListener {
+            val intent = Intent(activity, PurchActivity::class.java)
+            startActivity(intent)
+        }
+
+        val button2 = view.findViewById<View>(R.id.profile_settings)
+        button2.setOnClickListener {
+            val intent = Intent(activity, SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
 
     fun sign_in_intent(inflater: LayoutInflater, container: ViewGroup?,
                        savedInstanceState: Bundle?): View? {

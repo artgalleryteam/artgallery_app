@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/settings_back"
+            android:id="@+id/cart_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/picture_info_circle"
@@ -39,12 +39,12 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/settings_title"
+        android:id="@+id/cart_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/literata_semibold"
-        android:text="Настройки"
+        android:text="Корзина"
         android:textSize="56sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,18 +52,15 @@
         />
 
     <TextView
-        android:id="@+id/settings_logout"
+        android:id="@+id/sign_in_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/literata"
-        android:text="Выйти"
-        android:textColor="@color/white"
+        android:text="Корзина пуста."
         android:textSize="30sp"
-        android:gravity="center"
-        android:background="@drawable/activity_edit_shape1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_title" />
+        app:layout_constraintTop_toBottomOf="@+id/cart_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

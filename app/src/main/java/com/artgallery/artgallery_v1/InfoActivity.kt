@@ -1,6 +1,7 @@
 package com.artgallery.artgallery_v1
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -33,6 +34,10 @@ class InfoActivity : AppCompatActivity() {
         val cam = findViewById<LinearLayout>(R.id.info_ar)
         cam.setOnClickListener {
             val intent = Intent(this, ARActivity::class.java)
+            val imageUri1 = Uri.parse(imageUri)
+            val fileNameWithExtension = imageUri1.getLastPathSegment()
+            val fileNameWithoutExtension = fileNameWithExtension?.substringBeforeLast(".")
+            intent.putExtra("imageUri", fileNameWithoutExtension)
             startActivity(intent)
         }
 

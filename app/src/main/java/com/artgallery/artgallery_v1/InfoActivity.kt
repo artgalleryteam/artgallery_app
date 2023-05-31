@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.bumptech.glide.Glide
@@ -28,6 +29,12 @@ class InfoActivity : AppCompatActivity() {
             .load(imageUri)
             .apply(RequestOptions.bitmapTransform(RoundedCornersTransformation(cornerRadius, 0)))
             .into(imageView)
+
+        val cam = findViewById<LinearLayout>(R.id.info_ar)
+        cam.setOnClickListener {
+            val intent = Intent(this, ARActivity::class.java)
+            startActivity(intent)
+        }
 
         // Get custom metadata and display in TextViews
         val storage = Firebase.storage

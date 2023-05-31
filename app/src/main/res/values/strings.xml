@@ -47,6 +47,7 @@
 
     <!--  Home  -->
     <string name="for_you">Подборка для вас</string>
+    <string name="art_of_day">Картина дня</string>
 
     <!--  Profile  -->
     <string name="favorites">Избранное</string>

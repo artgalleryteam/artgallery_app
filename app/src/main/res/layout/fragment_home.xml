@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/literata_semibold"
-        android:text="@string/for_you"
+        android:text="@string/art_of_day"
         android:textColor="#FFFFFF"
         android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
@@ -39,32 +39,55 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <ImageView
+        android:id="@+id/home_pic"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:contentDescription="@string/email"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5">
+        app:layout_constraintTop_toBottomOf="@+id/home_pic">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_text_view"
+            android:fontFamily="@font/literata_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="Автор" />
 
-            <androidx.gridlayout.widget.GridLayout
-                android:id="@+id/home_pic_space"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="15dp"
-                android:paddingEnd="15dp"
-                app:columnCount="2">
+        <TextView
+            android:id="@+id/author_text_view"
+            android:fontFamily="@font/literata"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Название" />
 
-            </androidx.gridlayout.widget.GridLayout>
-        </LinearLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/year_text_view"
+            android:fontFamily="@font/literata"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Год" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.artgallery.artgallery_v1.ui.home
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,7 @@ import androidx.constraintlayout.widget.ConstraintSet
 import androidx.fragment.app.Fragment
 import androidx.gridlayout.widget.GridLayout
 import androidx.lifecycle.ViewModelProvider
+import com.artgallery.artgallery_v1.InfoActivity
 import com.artgallery.artgallery_v1.R
 import com.artgallery.artgallery_v1.databinding.FragmentHomeBinding
 import com.bumptech.glide.Glide
@@ -66,6 +68,13 @@ private var _binding: FragmentHomeBinding? = null
                 Glide.with(requireContext())
                     .load(uri)
                     .into(imageView)
+
+                // Add OnClickListener here
+                imageView.setOnClickListener {
+                    val intent = Intent(activity, InfoActivity::class.java)
+                    intent.putExtra("imageUri", uri.toString())
+                    startActivity(intent)
+                }
 
                 // Get the custom metadata of the image
                 randomItem.metadata.addOnSuccessListener { storageMetadata ->
